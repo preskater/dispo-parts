@@ -23,6 +23,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.2",
+    "eslint-formatter-github": "^1.1.4",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
