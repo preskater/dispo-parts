@@ -16,6 +16,31 @@ DispoParts is a web application dedicated to selling and buying used/new car par
 - Next.js for the web application framework
 - Supabase for backend services.
 - Tailwind CSS for styling
-- Flowbite for UI components
+- Flowbite React for UI components
 - Stripe for payment processing
 - Vercel for deployment
+
+## Getting Started
+
+To get started with DispoParts, follow these steps:
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/preskater/dispo-parts.git
+    cd dispo-parts
+    ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000` to see the application in action.
