@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import { Table, TableBody, TableCell, TableHead, TableHeadCell, TableRow } from "flowbite-react";
 import type { Tables } from '@/lib/supabase/database.types';
 
-type Brand = Tables<'brands'>;
+type CarBrand = Tables<'car_brands'>;
 
 function formatDate(dateString: string | null): string {
   if (!dateString) return 'N/A';
@@ -15,7 +15,7 @@ export default async function Page() {
   const supabase = createClient(cookieStore);
 
   const { data: brands, error } = await supabase
-    .from('brands')
+    .from('car_brands')
     .select('*');
 
   if (error) {
@@ -40,7 +40,7 @@ export default async function Page() {
           </TableRow>
         </TableHead>
         <TableBody className="divide-y">
-          {brands.map((brand: Brand) => (
+          {brands.map((brand: CarBrand) => (
             <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800" key={brand.id}>
               <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                 {brand.name}
